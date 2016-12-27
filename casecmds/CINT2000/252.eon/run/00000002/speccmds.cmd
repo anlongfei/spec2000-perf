@@ -1,0 +1,4 @@
+-u /home/alf/spec2000/CPU2000_install/benchspec/CINT2000/252.eon/run/00000002
+-o cook_log.out -e cook_log.err ../00000002/eon_base.cpu_O0 chair.control.cook chair.camera chair.surfaces chair.cook.ppm ppm pixels_out.cook
+-o rushmeier_log.out -e rushmeier_log.err ../00000002/eon_base.cpu_O0 chair.control.rushmeier chair.camera chair.surfaces chair.rushmeier.ppm ppm pixels_out.rushmeier
+-o kajiya_log.out -e kajiya_log.err ../00000002/eon_base.cpu_O0 chair.control.kajiya chair.camera chair.surfaces chair.kajiya.ppm ppm pixels_out.kajiya

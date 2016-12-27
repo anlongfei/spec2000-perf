@@ -1,0 +1,2 @@
+-u /home/alf/spec2000/CPU2000_install/benchspec/CINT2000/253.perlbmk/run/00000002
+-i test.in -o test.out -e test.err ../00000002/perlbmk_base.cpu_O0 -I. -I./lib test.pl

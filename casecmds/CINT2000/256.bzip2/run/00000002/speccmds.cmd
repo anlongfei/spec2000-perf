@@ -1,0 +1,2 @@
+-u /home/alf/spec2000/CPU2000_install/benchspec/CINT2000/256.bzip2/run/00000002
+-o input.random.out -e input.random.err ../00000002/bzip2_base.cpu_O0 input.random 2

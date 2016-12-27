@@ -48,9 +48,9 @@ cd $curDir
 
 if [ -d "CPU2000" ];then
 	rm CPU2000/* -rfv
-else
-	mkdir CPU2000
 fi
+mkdir CPU2000
+
 
 cd CPU2000
 dataDir=`pwd`

@@ -1,0 +1,2 @@
+-u /home/alf/spec2000/CPU2000_install/benchspec/CFP2000/178.galgel/run/00000002
+-i galgel.in -o galgel.out -e galgel.err ../00000002/galgel_base.cpu_O0

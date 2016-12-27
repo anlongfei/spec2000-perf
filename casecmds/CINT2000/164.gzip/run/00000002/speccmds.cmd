@@ -1,0 +1,2 @@
+-u /home/alf/spec2000/CPU2000_install/benchspec/CINT2000/164.gzip/run/00000002
+-o input.compressed.out -e input.compressed.err ../00000002/gzip_base.cpu_O0 input.compressed 2

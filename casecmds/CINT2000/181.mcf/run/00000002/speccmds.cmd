@@ -1,0 +1,2 @@
+-u /home/alf/spec2000/CPU2000_install/benchspec/CINT2000/181.mcf/run/00000002
+-o inp.out -e inp.err ../00000002/mcf_base.cpu_O0 inp.in

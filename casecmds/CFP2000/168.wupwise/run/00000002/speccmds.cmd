@@ -1,0 +1,2 @@
+-u /home/alf/spec2000/CPU2000_install/benchspec/CFP2000/168.wupwise/run/00000002
+-o wupwise.out -e wupwise.err ../00000002/wupwise_base.cpu_O0

@@ -1,0 +1,2 @@
+-u /home/alf/spec2000/CPU2000_install/benchspec/CFP2000/173.applu/run/00000002
+-i applu.in -o applu.out -e applu.err ../00000002/applu_base.cpu_O0

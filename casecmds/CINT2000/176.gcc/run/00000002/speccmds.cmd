@@ -1,0 +1,2 @@
+-u /home/alf/spec2000/CPU2000_install/benchspec/CINT2000/176.gcc/run/00000002
+-o cccp.out -e cccp.err ../00000002/cc1_base.cpu_O0 cccp.i -o cccp.s

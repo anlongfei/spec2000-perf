@@ -1,0 +1,2 @@
+-u /home/alf/spec2000/CPU2000_install/benchspec/CFP2000/189.lucas/run/00000002
+-i lucas2.in -o lucas2.out -e lucas2.err ../00000002/lucas_base.cpu_O0
