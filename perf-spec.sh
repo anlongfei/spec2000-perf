@@ -6,7 +6,11 @@ curDir=`pwd`
 cd $curDir
 echo " ------->>>>>>> run RunAndKill.sh ..."
 sleep 2
-#./RunAndKill.sh
+# RunAndKill
+./RunAndKill.sh
+
+# deal cmds
+./dealcmds.sh
 cd $specDir
 source shrc
 

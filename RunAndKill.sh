@@ -34,22 +34,22 @@ source ../shrc
 find ${specbench} -name exe -exec rm -rfv {} \;
 find ${specbench} -name run -exec rm -rfv {} \;
 
-runspec -c pmc-980-O3.cfg -i test --action setup all 
+runspec -c pmc-980-O3.cfg --action setup all 
 
 echo $INT
 for case in $INT
 do
 	case=${case%.*}
 	echo $case
-	runspec -c pmc-980-O3.cfg -i test -n 1 --noreportable $case &
+	runspec -c pmc-980-O3.cfg -n 1 --noreportable $case &
 	sleep 2
-	ps -ef | grep cpu_O0 | awk '{print $2}' | xargs kill -9
+	ps -ef | grep cpu_O3 | awk '{print $2}' | xargs kill -9
 done
 
 for i in 1 2 3 4 5
 do
 	echo $i
-	ps -ef | grep cpu_O0 | awk '{print $2}' | xargs kill -9
+	ps -ef | grep cpu_O3 | awk '{print $2}' | xargs kill -9
 done
 
 
@@ -58,14 +58,14 @@ for case in $FP
 do
 	case=${case%.*}
 	echo $case
-	runspec -c pmc-980-O3.cfg -i test -n 1 --noreportable $case &
+	runspec -c pmc-980-O3.cfg -n 1 --noreportable $case &
 	sleep 1
-	ps -ef | grep cpu_O0 | awk '{print $2}' | xargs kill -9
+	ps -ef | grep cpu_O3 | awk '{print $2}' | xargs kill -9
 done
 	
 for i in 1 2 3 4 5
 do
 	echo $i
-	ps -ef | grep cpu_O0 | awk '{print $2}' | xargs kill -9
+	ps -ef | grep cpu_O3 | awk '{print $2}' | xargs kill -9
 done
 sleep 5
