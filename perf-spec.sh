@@ -60,11 +60,8 @@ echo " ------->>>>>>> run INT ..."
 sleep 2
 i=0
 k=3
-specDir=${specDir}"/benchspec/CINT2000/"
-while true
-do
-	#index=`expr $i\*$k`
 	index=$(($i * 3))
+
 	pmc_name0=${array_pmc[$(($index + 0))]}
 	umask0=${array_pmc[$(($index + 1))]}
 	event0=${array_pmc[$(($index + 2))]}
@@ -93,6 +90,103 @@ do
 	umask6=${array_pmc[$(($index + 19))]}
 	event6=${array_pmc[$(($index + 20))]}
 
+	pmc_name0=${array_pmc[$(($index + 21))]}
+	umask7=${array_pmc[$(($index + 22))]}
+	event7=${array_pmc[$(($index + 23))]}
+
+	pmc_name1=${array_pmc[$(($index + 24))]}
+	umask8=${array_pmc[$(($index + 25))]}
+	event8=${array_pmc[$(($index + 26))]}
+
+	pmc_name2=${array_pmc[$(($index + 27))]}
+	umask9=${array_pmc[$(($index + 28))]}
+	event9=${array_pmc[$(($index + 29))]}
+
+	pmc_name3=${array_pmc[$(($index + 30))]}
+	umask10=${array_pmc[$(($index + 31))]}
+	event10=${array_pmc[$(($index + 32))]}
+
+	pmc_name4=${array_pmc[$(($index + 33))]}
+	umask11=${array_pmc[$(($index + 34))]}
+	event11=${array_pmc[$(($index + 35))]}
+
+	pmc_name5=${array_pmc[$(($index + 36))]}
+	umask12=${array_pmc[$(($index + 37))]}
+	event12=${array_pmc[$(($index + 38))]}
+
+	pmc_name6=${array_pmc[$(($index + 39))]}
+	umask13=${array_pmc[$(($index + 40))]}
+	event13=${array_pmc[$(($index + 41))]}
+
+	pmc_name0=${array_pmc[$(($index + 42))]}
+	umask14=${array_pmc[$(($index + 43))]}
+	event14=${array_pmc[$(($index + 44))]}
+
+	pmc_name1=${array_pmc[$(($index + 45))]}
+	umask15=${array_pmc[$(($index + 46))]}
+	event15=${array_pmc[$(($index + 47))]}
+
+	pmc_name2=${array_pmc[$(($index + 48))]}
+	umask16=${array_pmc[$(($index + 49))]}
+	event16=${array_pmc[$(($index + 50))]}
+
+	pmc_name3=${array_pmc[$(($index + 51))]}
+	umask17=${array_pmc[$(($index + 52))]}
+	event17=${array_pmc[$(($index + 53))]}
+
+	pmc_name4=${array_pmc[$(($index + 54))]}
+	umask18=${array_pmc[$(($index + 55))]}
+	event18=${array_pmc[$(($index + 56))]}
+
+	pmc_name5=${array_pmc[$(($index + 57))]}
+	umask19=${array_pmc[$(($index + 58))]}
+	event19=${array_pmc[$(($index + 59))]}
+
+	pmc_name6=${array_pmc[$(($index + 60))]}
+	umask20=${array_pmc[$(($index + 61))]}
+	event20=${array_pmc[$(($index + 62))]}
+
+	pmc_name0=${array_pmc[$(($index + 63))]}
+	umask21=${array_pmc[$(($index + 64))]}
+	event21=${array_pmc[$(($index + 65))]}
+
+	pmc_name1=${array_pmc[$(($index + 66))]}
+	umask22=${array_pmc[$(($index + 67))]}
+	event22=${array_pmc[$(($index + 68))]}
+
+	pmc_name2=${array_pmc[$(($index + 69))]}
+	umask23=${array_pmc[$(($index + 70))]}
+	event23=${array_pmc[$(($index + 71))]}
+
+	pmc_name3=${array_pmc[$(($index + 72))]}
+	umask24=${array_pmc[$(($index + 73))]}
+	event24=${array_pmc[$(($index + 74))]}
+
+	pmc_name6=${array_pmc[$(($index + 75))]}
+	umask25=${array_pmc[$(($index + 76))]}
+	event25=${array_pmc[$(($index + 77))]}
+
+	pmc_name6=${array_pmc[$(($index + 78))]}
+	umask26=${array_pmc[$(($index + 79))]}
+	event26=${array_pmc[$(($index + 80))]}
+
+	pmc_name4=${array_pmc[$(($index + 80))]}
+	umask27=${array_pmc[$(($index + 82))]}
+	event27=${array_pmc[$(($index + 83))]}
+
+	pmc_name5=${array_pmc[$(($index + 84))]}
+	umask28=${array_pmc[$(($index + 85))]}
+	event28=${array_pmc[$(($index + 86))]}
+
+
+
+
+
+specDir=${specDir}"/benchspec/CINT2000/"
+while true
+do
+	index=$(($i * 3))
+	#index=`expr $i\*$k`
 	echo "index"  $index
 	echo "pmc_name" $pmc_name
 	echo "umask"  $umask
@@ -119,12 +213,17 @@ do
 		echo "=====================================================================================" >>   ${dataDir}/int.$index
 		echo $dest >>   ${dataDir}/int.$index 
 		echo $case >>   ${dataDir}/int.$index 
-		perf stat -e r${umask0}${event0} -e r${umask1}${event1} -e r${umask2}${event2} -e r${umask3}${event3} -e r${umask4}${event4} -e r${umask5}${event5} -e r${umask6}${event6} specinvoke  speccmds.cmd 2>>   ${dataDir}/int.$index
+		if [ $i -eq 0 ];then
+			perf stat -e r${umask0}${event0} -e r${umask1}${event1} -e r${umask2}${event2} -e r${umask3}${event3} -e r${umask4}${event4} -e r${umask5}${event5} -e r${umask6}${event6} -e r${umask7}${event7} -e r${umask8}${event8} -e r${umask9}${event9} -e r${umask10}${event10} -e r${umask11}${event11} -e r${umask12}${event12} -e r${umask13}${event13}  specinvoke  speccmds.cmd 2>>   ${dataDir}/int.$index
+		fi
+
+		if [ $i -eq 14 ];then
+			perf stat -e r${umask14}${event14} -e r${umask15}${event15} -e r${umask16}${event16} -e r${umask17}${event17} -e r${umask18}${event18} -e r${umask19}${event19} -e r${umask20}${event20}  -e r${umask21}${event21}  -e r${umask22}${event22}  -e r${umask23}${event23}  -e r${umask24}${event24}  -e r${umask25}${event25}  -e r${umask26}${event26}  -e r${umask27}${event27} specinvoke  speccmds.cmd 2>>   ${dataDir}/int.$index
+		fi
 	done
 	
 	
-	
-	i=$(($i + 7))
+	i=$(($i + 14))
 	if [ $i -eq 28 ] ;then
 		echo "done !"
 		sleep 2
@@ -143,42 +242,14 @@ specDir=/home/alf/spec2000/CPU2000_install
 specDir=${specDir}"/benchspec/CFP2000/"
 while true
 do
-	#index=`expr $i\*$k`
 	index=$(($i * 3))
-	pmc_name0=${array_pmc[$(($index + 0))]}
-	umask0=${array_pmc[$(($index + 1))]}
-	event0=${array_pmc[$(($index + 2))]}
-
-	pmc_name1=${array_pmc[$(($index + 3))]}
-	umask1=${array_pmc[$(($index + 4))]}
-	event1=${array_pmc[$(($index + 5))]}
-
-	pmc_name2=${array_pmc[$(($index + 6))]}
-	umask2=${array_pmc[$(($index + 7))]}
-	event2=${array_pmc[$(($index + 8))]}
-
-	pmc_name3=${array_pmc[$(($index + 9))]}
-	umask3=${array_pmc[$(($index + 10))]}
-	event3=${array_pmc[$(($index + 11))]}
-
-	pmc_name4=${array_pmc[$(($index + 12))]}
-	umask4=${array_pmc[$(($index + 13))]}
-	event4=${array_pmc[$(($index + 14))]}
-
-	pmc_name5=${array_pmc[$(($index + 15))]}
-	umask5=${array_pmc[$(($index + 16))]}
-	event5=${array_pmc[$(($index + 17))]}
-
-	pmc_name6=${array_pmc[$(($index + 18))]}
-	umask6=${array_pmc[$(($index + 19))]}
-	event6=${array_pmc[$(($index + 20))]}
-
 	echo "index"  $index
 	echo "pmc_name" $pmc_name
 	echo "umask"  $umask
 	echo "event"  $event
 
 	#pwd
+#pwd
 	destDir=`find ${specDir} -name 00000002`
 	echo $specDir
 	len=`expr length ${specDir}`
@@ -199,12 +270,15 @@ do
 		echo "=====================================================================================" >>   ${dataDir}/fp.$index
 		echo $dest >>   ${dataDir}/fp.$index 
 		echo $case >>   ${dataDir}/fp.$index 
-		perf stat -e r${umask0}${event0} -e r${umask1}${event1} -e r${umask2}${event2} -e r${umask3}${event3} -e r${umask4}${event4} -e r${umask5}${event5} -e r${umask6}${event6} specinvoke  speccmds.cmd 2>>   ${dataDir}/fp.$index
+		if [ $i -eq 0 ];then
+			perf stat -e r${umask0}${event0} -e r${umask1}${event1} -e r${umask2}${event2} -e r${umask3}${event3} -e r${umask4}${event4} -e r${umask5}${event5} -e r${umask6}${event6} -e r${umask7}${event7} -e r${umask8}${event8} -e r${umask9}${event9} -e r${umask10}${event10} -e r${umask11}${event11} -e r${umask12}${event12} -e r${umask13}${event13}  specinvoke  speccmds.cmd 2>>   ${dataDir}/fp.$index
+		fi
+
+		if [ $i -eq 14 ];then
+			perf stat -e r${umask14}${event14} -e r${umask15}${event15} -e r${umask16}${event16} -e r${umask17}${event17} -e r${umask18}${event18} -e r${umask19}${event19} -e r${umask20}${event20}  -e r${umask21}${event21}  -e r${umask22}${event22}  -e r${umask23}${event23}  -e r${umask24}${event24}  -e r${umask25}${event25}  -e r${umask26}${event26}  -e r${umask27}${event27} specinvoke  speccmds.cmd 2>>   ${dataDir}/fp.$index
+		fi
 	done
-	
-	
-	
-	i=$(($i + 7))
+	i=$(($i + 14))
 	if [ $i -eq 28 ] ;then
 		echo "done !"
 		sleep 2
@@ -212,61 +286,3 @@ do
 	fi
 done
 
-
-
-
-
-## 4. run FP
-#echo " ------->>>>>>> run FP ..."
-#sleep 2
-#i=0
-#k=3
-#specDir=/home/alf/spec2000/CPU2000_install
-#specDir=${specDir}"/benchspec/CFP2000/"
-#while true
-#do
-#	#index=`expr $i\*$k`
-#	index=$(($i * 3))
-#	pmc_name=${array_pmc[$(($index + 0))]}
-#	umask=${array_pmc[$(($index + 1))]}
-#	event=${array_pmc[$(($index + 2))]}
-#	echo "index"  $index
-#	echo "pmc_name" $pmc_name
-#	echo "umask"  $umask
-#	echo "event"  $event
-#
-#	#pwd
-#	destDir=`find ${specDir} -name 00000002`
-#	echo $specDir
-#	len=`expr length ${specDir}`
-#	echo $len
-#	echo "***********************fp data***************************" >  ${dataDir}/fp.${pmc_name}
-#	echo "" >>  ${dataDir}/fp.${pmc_name}
-#	
-#	for dest in $destDir
-#	do
-#		case=${dest:$len}
-#		case=${case%/*}
-#		case=${case%/*}
-#		echo $case
-#		
-#		echo $dest
-#		cd $dest
-#		echo "====================================================================================="
-#		echo "=====================================================================================" >>  ${dataDir}/fp.${pmc_name}
-#		echo $dest >>  ${dataDir}/fp.${pmc_name}
-#		echo $case >>  ${dataDir}/fp.${pmc_name}
-#		perf stat -e r${umask}${event} specinvoke  speccmds.cmd 2>> ${dataDir}/fp.${pmc_name}
-#	done
-#	
-#	
-#	
-#	i=$(($i + 1))
-#	if [ $i -eq 28 ] ;then
-#		echo "done !"
-#		sleep 2
-#		break	
-#	fi
-#done
-#
-#

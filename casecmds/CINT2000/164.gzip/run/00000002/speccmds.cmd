@@ -1,2 +1,6 @@
 -u /home/alf/spec2000/CPU2000_install/benchspec/CINT2000/164.gzip/run/00000002
--o input.compressed.out -e input.compressed.err ../00000002/gzip_base.cpu_O0 input.compressed 2
+-o input.source.out -e input.source.err ../00000002/gzip_base.cpu_O0 input.source 60
+-o input.log.out -e input.log.err ../00000002/gzip_base.cpu_O0 input.log 60
+-o input.graphic.out -e input.graphic.err ../00000002/gzip_base.cpu_O0 input.graphic 60
+-o input.random.out -e input.random.err ../00000002/gzip_base.cpu_O0 input.random 60
+-o input.program.out -e input.program.err ../00000002/gzip_base.cpu_O0 input.program 60

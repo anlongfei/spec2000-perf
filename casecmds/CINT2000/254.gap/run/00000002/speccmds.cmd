@@ -1,2 +1,2 @@
 -u /home/alf/spec2000/CPU2000_install/benchspec/CINT2000/254.gap/run/00000002
--i test.in -o test.out -e test.err ../00000002/gap_base.cpu_O0 -l ./ -q -m 64M
+-i ref.in -o ref.out -e ref.err ../00000002/gap_base.cpu_O0 -l ./ -q -m 192M
