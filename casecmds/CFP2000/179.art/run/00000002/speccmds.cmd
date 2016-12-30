@@ -1,3 +1,0 @@
--u /home/alf/spec2000/CPU2000_install/benchspec/CFP2000/179.art/run/00000002
--o ref.1.out -e ref.1.err ../00000002/art_base.cpu_O0 -scanfile c756hel.in -trainfile1 a10.img -trainfile2 hc.img -stride 2 -startx 110 -starty 200 -endx 160 -endy 240 -objects 10
--o ref.2.out -e ref.2.err ../00000002/art_base.cpu_O0 -scanfile c756hel.in -trainfile1 a10.img -trainfile2 hc.img -stride 2 -startx 470 -starty 140 -endx 520 -endy 180 -objects 10

@@ -1,4 +1,0 @@
--u /home/alf/spec2000/CPU2000_install/benchspec/CINT2000/255.vortex/run/00000002
--o vortex1.out2 -e vortex1.err ../00000002/vortex_base.cpu_O0 lendian1.raw
--o vortex2.out2 -e vortex2.err ../00000002/vortex_base.cpu_O0 lendian2.raw
--o vortex3.out2 -e vortex3.err ../00000002/vortex_base.cpu_O0 lendian3.raw

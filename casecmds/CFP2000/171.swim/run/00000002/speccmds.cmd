@@ -1,2 +1,0 @@
--u /home/alf/spec2000/CPU2000_install/benchspec/CFP2000/171.swim/run/00000002
--i swim.in -o swim.out -e swim.err ../00000002/swim_base.cpu_O0

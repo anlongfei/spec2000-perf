@@ -1,2 +1,0 @@
--u /home/alf/spec2000/CPU2000_install/benchspec/CINT2000/300.twolf/run/00000002
--o ref.stdout -e ref.err ../00000002/twolf_base.cpu_O0 ref

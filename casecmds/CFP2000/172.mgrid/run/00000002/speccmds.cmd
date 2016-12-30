@@ -1,2 +1,0 @@
--u /home/alf/spec2000/CPU2000_install/benchspec/CFP2000/172.mgrid/run/00000002
--i mgrid.in -o mgrid.out -e mgrid.err ../00000002/mgrid_base.cpu_O0

@@ -1,2 +1,0 @@
--u /home/alf/spec2000/CPU2000_install/benchspec/CINT2000/186.crafty/run/00000002
--i crafty.in -o crafty.out -e crafty.err ../00000002/crafty_base.cpu_O0
