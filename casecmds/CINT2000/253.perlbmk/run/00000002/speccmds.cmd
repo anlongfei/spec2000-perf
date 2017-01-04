@@ -1,8 +1,0 @@
--u /home/alf/spec2000/CPU2000_install/benchspec/CINT2000/253.perlbmk/run/00000002
--o 2.550.15.24.23.100.out -e 2.550.15.24.23.100.err ../00000002/perlbmk_base.cpu_O0 -I./lib diffmail.pl 2 550 15 24 23 100
--o makerand.out -e makerand.err ../00000002/perlbmk_base.cpu_O0 -I. -I./lib makerand.pl
--o b.3.m.4.out -e b.3.m.4.err ../00000002/perlbmk_base.cpu_O0 -I./lib perfect.pl b 3 m 4
--o 850.5.19.18.1500.out -e 850.5.19.18.1500.err ../00000002/perlbmk_base.cpu_O0 -I./lib splitmail.pl 850 5 19 18 1500
--o 704.12.26.16.836.out -e 704.12.26.16.836.err ../00000002/perlbmk_base.cpu_O0 -I./lib splitmail.pl 704 12 26 16 836
--o 535.13.25.24.1091.out -e 535.13.25.24.1091.err ../00000002/perlbmk_base.cpu_O0 -I./lib splitmail.pl 535 13 25 24 1091
--o 957.12.23.26.1014.out -e 957.12.23.26.1014.err ../00000002/perlbmk_base.cpu_O0 -I./lib splitmail.pl 957 12 23 26 1014

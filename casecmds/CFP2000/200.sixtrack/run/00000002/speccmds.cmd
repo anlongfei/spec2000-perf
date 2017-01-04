@@ -1,2 +1,0 @@
--u /home/alf/spec2000/CPU2000_install/benchspec/CFP2000/200.sixtrack/run/00000002
--i inp.in -o inp.out -e inp.err ../00000002/sixtrack_base.cpu_O0

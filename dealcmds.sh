@@ -1,6 +1,6 @@
 #/bin/bash
 
-spec=/home/alf/spec2000/CPU2000_install
+spec=/home/cpu/spec2000/CPU2000_install
 specbenchspec=${spec}/benchspec/
 lenbenchspec=`expr length $specbenchspec`
 cur=`pwd`
@@ -60,6 +60,7 @@ funCpCmds(){
 		tmp=${tmp%/*}
 		echo -e "\n"$tmp >> int.cmds
 		sed -n '2,$p' $case/speccmds.cmd >> int.cmds
+		sed -i '3,$d' $case/speccmds.cmd
 	done
 
 	echo -e "\t\tfp cmds\n" > fp.cmds
@@ -74,6 +75,7 @@ funCpCmds(){
 		tmp=${tmp%/*}
 		echo -e "\n"$tmp >> fp.cmds
 		sed -n '2,$p' $case/speccmds.cmd >> fp.cmds
+		sed -i '3,$d' $case/speccmds.cmd
 	done
 
 

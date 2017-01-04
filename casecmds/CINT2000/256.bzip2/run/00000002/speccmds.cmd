@@ -1,4 +1,0 @@
--u /home/alf/spec2000/CPU2000_install/benchspec/CINT2000/256.bzip2/run/00000002
--o input.source.out -e input.source.err ../00000002/bzip2_base.cpu_O0 input.source 58
--o input.graphic.out -e input.graphic.err ../00000002/bzip2_base.cpu_O0 input.graphic 58
--o input.program.out -e input.program.err ../00000002/bzip2_base.cpu_O0 input.program 58

@@ -1,3 +1,0 @@
--u /home/alf/spec2000/CPU2000_install/benchspec/CINT2000/175.vpr/run/00000002
--o place_log.out -e place_log.err ../00000002/vpr_base.cpu_O0 net.in arch.in place.out dum.out -nodisp -place_only -init_t 5 -exit_t 0.005 -alpha_t 0.9412 -inner_num 2
--o route_log.out -e route_log.err ../00000002/vpr_base.cpu_O0 net.in arch.in place.in route.out -nodisp -route_only -route_chan_width 15 -pres_fac_mult 2 -acc_fac 1 -first_iter_pres_fac 4 -initial_pres_fac 8
