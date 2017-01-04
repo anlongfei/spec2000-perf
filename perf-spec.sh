@@ -7,10 +7,10 @@ cd $curDir
 echo " ------->>>>>>> run RunAndKill.sh ..."
 sleep 2
 # RunAndKill
-./RunAndKill.sh
+#./RunAndKill.sh
 
 # deal cmds
-./dealcmds.sh
+#./dealcmds.sh
 cd $specDir
 source shrc
 
