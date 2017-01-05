@@ -1,6 +1,6 @@
 #/bin/bash
 
-spec=/home/cpu/spec2000/CPU2000_install
+spec=/home/alf/spec2000/CPU2000_install
 specbenchspec=${spec}/benchspec/
 lenbenchspec=`expr length $specbenchspec`
 cur=`pwd`

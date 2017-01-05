@@ -1,0 +1,113 @@
+****************************fp*******************************
+168.wupwise
+
+ Performance counter stats for 'specinvoke speccmds.cmd':
+
+      917235738652      instructions:u                                              
+
+      83.921955457 seconds time elapsed
+
+171.swim
+
+ Performance counter stats for 'specinvoke speccmds.cmd':
+
+     1217531725104      instructions:u                                              
+
+     112.237523703 seconds time elapsed
+
+172.mgrid
+
+ Performance counter stats for 'specinvoke speccmds.cmd':
+
+     3845991289960      instructions:u                                              
+
+     284.317128773 seconds time elapsed
+
+173.applu
+
+ Performance counter stats for 'specinvoke speccmds.cmd':
+
+     2476875425372      instructions:u                                              
+
+     217.359363501 seconds time elapsed
+
+177.mesa
+
+ Performance counter stats for 'specinvoke speccmds.cmd':
+
+      399744549022      instructions:u                                              
+
+      50.657630636 seconds time elapsed
+
+178.galgel
+
+ Performance counter stats for 'specinvoke speccmds.cmd':
+
+     1368093862404      instructions:u                                              
+
+     110.146473778 seconds time elapsed
+
+179.art
+
+ Performance counter stats for 'specinvoke speccmds.cmd':
+
+      286941787445      instructions:u                                              
+
+      38.194169920 seconds time elapsed
+
+183.equake
+
+ Performance counter stats for 'specinvoke speccmds.cmd':
+
+      481019114990      instructions:u                                              
+
+      52.682383171 seconds time elapsed
+
+187.facerec
+
+ Performance counter stats for 'specinvoke speccmds.cmd':
+
+      619199081339      instructions:u                                              
+
+      62.358732368 seconds time elapsed
+
+188.ammp
+
+ Performance counter stats for 'specinvoke speccmds.cmd':
+
+      704243273491      instructions:u                                              
+
+     118.482141404 seconds time elapsed
+
+189.lucas
+
+ Performance counter stats for 'specinvoke speccmds.cmd':
+
+      466395553729      instructions:u                                              
+
+      64.717299508 seconds time elapsed
+
+191.fma3d
+
+ Performance counter stats for 'specinvoke speccmds.cmd':
+
+      780933087367      instructions:u                                              
+
+      97.238594860 seconds time elapsed
+
+200.sixtrack
+
+ Performance counter stats for 'specinvoke speccmds.cmd':
+
+     2328654252952      instructions:u                                              
+
+     190.906400418 seconds time elapsed
+
+301.apsi
+
+ Performance counter stats for 'specinvoke speccmds.cmd':
+
+     1598833000355      instructions:u                                              
+
+     172.718129942 seconds time elapsed
+
