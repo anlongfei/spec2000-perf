@@ -1,5 +1,9 @@
 #!/bin/bash
-specDir=/home/alf/spec2000/CPU2000_install
+
+user=cpu
+
+
+specDir=/home/${user}/spec2000/CPU2000_install
 curDir=`pwd`
 
 INT="164.gzip     
