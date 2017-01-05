@@ -59,7 +59,7 @@ def dealdata():
             fp.append(words)
     f.close()
 
-    outfile = output+"/spec2000-int.xlsx"
+    outfile = output+"/spec2000-int.txt"
     print outfile
     f=open(outfile,"wb")
     print "===========int======================"
@@ -72,7 +72,7 @@ def dealdata():
             f.write(case[1]+"\t"+case[0]+"\n")
     f.close()
 
-    outfile=output+"/spec2000-fp.xlsx"
+    outfile=output+"/spec2000-fp.txt"
     f=open(outfile,"wb")
     print "===========fp======================"
     for case in fp:
@@ -80,7 +80,7 @@ def dealdata():
         if lencase == 1:
             f.write(case[0]+"\n")
         if lencase == 2:
-            f.write(case[1]+"\t"+case[0])
+            f.write(case[1]+"\t"+case[0]+"\n")
     f.close()
 
 
