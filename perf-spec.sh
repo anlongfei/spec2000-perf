@@ -5,14 +5,16 @@ specDir=/home/${user}/spec2000/CPU2000_install
 curDir=`pwd`
 
 # 1. first run spec2000
-cd $curDir
 echo " ------->>>>>>> run RunAndKill.sh ..."
 sleep 2
 # RunAndKill
-#./RunAndKill.sh
+cd $curDir
+./RunAndKill.sh
 
 # deal cmds
-#./dealcmds.sh
+cd $curDir
+./dealcmds.sh
+
 cd $specDir
 source shrc
 
