@@ -1,5 +1,6 @@
 #!/bin/bash
 user=cpu
+platform=950
 
 specDir=/home/${user}/spec2000/CPU2000_install
 curDir=`pwd`
@@ -294,3 +295,14 @@ do
 	fi
 done
 
+cd $curDir
+if [ -d ${platform} ];then
+	rm -rfv ${platform}
+fi
+
+cd $curDir
+mkdir ${platform}
+mv CPU2000 ${platform}/ 
+
+cd $curDir
+python ./dealpmcdata.py

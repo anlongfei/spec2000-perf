@@ -1,5 +1,6 @@
 #!/usr/bin/python
 #-* coding:utf-8 -*-
+import os
 list_fp = [
     "168.wupwise"
     ,"171.swim"
@@ -184,13 +185,16 @@ def init():
     global ffp2
     global output
     print "init"
-    fint1 ="./980/CPU2000/int.0"
-    fint2 ="./980/CPU2000/int.42"
-    ffp1  ="./980/CPU2000/fp.0"
-    ffp2  ="./980/CPU2000/fp.42"
-    output="./output"
+platform = "950"
+fint1 ="./"+platform+"/CPU2000/int.0"
+fint2 ="./"+platform+"/CPU2000/int.42"
+ffp1  ="./"+platform+"/CPU2000/fp.0"
+ffp2  ="./"+platform+"/CPU2000/fp.42"
+os.system("rm -rfv ./"+platform+"/output")
+os.mkdir("./"+platform+"/output")
+output="./"+platform+"/output"
 
-    print "**** int ****"
+	#print "**** int ****"
     #for i in range(len(list_int)):
     #    print list_int[i]
 
@@ -204,6 +208,5 @@ def init():
     #for i in range(len(list_pmc)):
     #    print list_pmc[i]
     #    print dict_pmc[list_pmc[i]]
-
 if __name__ == "__main__":
     main()

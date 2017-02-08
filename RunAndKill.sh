@@ -1,8 +1,10 @@
 #/bin/bash
 
 #modify
-user=alf
+user=cpu
 platform=950
+#tune="-i test"
+tune=
 
 specconfig=/home/${user}/spec2000/CPU2000_install/config
 specbench=/home/${user}/spec2000/CPU2000_install/benchspec
@@ -36,17 +38,17 @@ FP="168.wupwise
 cd $specconfig
 source ../shrc
 
-find ${specbench} -name exe -exec rm -rfv {} \;
-find ${specbench} -name run -exec rm -rfv {} \;
+#find ${specbench} -name exe -exec rm -rfv {} \;
+find ${specbench} -name 00000002 -exec rm -rfv {} \;
 
-runspec -c pmc-${platform}-O3.cfg --action setup all 
+runspec -c pmc-${platform}-O3.cfg ${tune} --action setup all 
 
 echo $INT
 for case in $INT
 do
 	case=${case%.*}
 	echo $case
-	runspec -c pmc-${platform}-O3.cfg -n 1 --noreportable $case &
+	runspec -c pmc-${platform}-O3.cfg  ${tune} -n 1 --noreportable $case &
 	sleep 2
 	ps -ef | grep cpu_O3 | awk '{print $2}' | xargs kill -9
 done
@@ -63,7 +65,7 @@ for case in $FP
 do
 	case=${case%.*}
 	echo $case
-	runspec -c pmc-${platform}-O3.cfg -n 1 --noreportable $case &
+	runspec -c pmc-${platform}-O3.cfg  ${tune} -n 1 --noreportable $case &
 	sleep 1
 	ps -ef | grep cpu_O3 | awk '{print $2}' | xargs kill -9
 done
